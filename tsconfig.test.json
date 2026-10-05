@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "types": ["node"],
+    "noEmit": false,
+    "outDir": "dist-test",
+    "rootDir": "src",
+    "jsx": "react-jsx",
+    "composite": false,
+    "tsBuildInfoFile": "node_modules/.tmp/tsconfig.test.tsbuildinfo"
+  },
+  "include": ["src/core/**/*.ts"]
+}
